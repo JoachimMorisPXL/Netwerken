@@ -14,7 +14,6 @@ no ipv6 cef
 !
 ip domain-name PXL.com
 !
-!
 spanning-tree mode pvst
 !
 interface GigabitEthernet0/0/0
