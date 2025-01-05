@@ -7,36 +7,14 @@ no service password-encryption
 !
 hostname R1
 !
-!
-!
 enable secret 5 $1$mERr$NARFGJytzNQ.L1OAZ.TVE/
-!
-!
-!
-!
-!
 !
 ip cef
 no ipv6 cef
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
 ip domain-name PXL.com
 !
-!
 spanning-tree mode pvst
-!
-!
-!
-!
-!
 !
 interface GigabitEthernet0/0/0
  ip address 192.168.1.1 255.255.255.0
@@ -64,12 +42,6 @@ ip classless
 !
 ip flow-export version 9
 !
-!
-!
-!
-!
-!
-!
 line con 0
  password Cisco
  login
@@ -80,7 +52,5 @@ line vty 0 4
  password Cisco
  login
  transport input ssh
-!
-!
 !
 end
